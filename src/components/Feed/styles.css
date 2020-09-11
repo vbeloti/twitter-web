@@ -1,8 +1,11 @@
 .feed {
   flex: 0.4;
-  border-right: 50px solid var(--twitter-background);
+  border-right: 1px solid var(--twitter-background);
   min-width: fit-content;
-  overflow-y: auto;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .feed__header {
@@ -13,3 +16,13 @@
   border: 1px solid var(--twitter-background);
   padding: 15px 20px;
 }
+
+.feed__header > h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
