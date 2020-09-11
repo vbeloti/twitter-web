@@ -1,6 +1,6 @@
 ## Twitter Web (React.js && Typescript && firebase)
 
-<!-- <img src="" alt="Twitter" /> -->
+<img src="https://github.com/vbeloti/twitter-web/blob/master/.github/assets/img/twitter-web-1.jpg?raw=true" alt="Twitter" />
 
 In the project directory, you can run:
 
