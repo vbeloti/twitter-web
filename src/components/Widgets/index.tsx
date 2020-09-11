@@ -4,7 +4,7 @@ import './styles.css';
 
 const Widgets = () => {
   return (
-    <div className="app">
+    <div className="widgets">
 
     </div>
   );
