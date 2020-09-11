@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import db from '../../config/connectionFirebase';
 import Post from '../Post';
 import TweetBox from '../TweetBox';
+import FlipMove from 'react-flip-move';
 
 import './styles.css';
 
@@ -31,17 +32,19 @@ const Feed = () => {
 
       <TweetBox />
 
-      {posts.map((post, index) => (
-        <Post
-          key={index}
-          displayName={post.displayName}
-          username={post.username}
-          verified={post.verified}
-          text={post.text}
-          image={post.image}
-          avatar={post.avatar}
-        />
-      ))}
+      <FlipMove>
+        {posts.map((post, index) => (
+          <Post
+            key={index}
+            displayName={post.displayName}
+            username={post.username}
+            verified={post.verified}
+            text={post.text}
+            image={post.image}
+            avatar={post.avatar}
+          />
+        ))}
+      </FlipMove>
     </div>
   );
 };
