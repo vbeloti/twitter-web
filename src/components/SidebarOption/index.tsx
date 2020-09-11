@@ -2,7 +2,12 @@ import React from 'react';
 
 import './styles.css';
 
-const SidebarOption = () => {
+interface ISidebarOption {
+  text: string;
+  Icon: any;
+}
+
+const SidebarOption = ({ text, Icon}: ISidebarOption) => {
   return (
     <div className="sidebarOption">
 

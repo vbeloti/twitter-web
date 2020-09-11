@@ -8,7 +8,8 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <TwitterIcon />
-      <SidebarOption />
+
+      <SidebarOption text="Texto" Icon={'Icon'} />
     </div>
   );
 };
