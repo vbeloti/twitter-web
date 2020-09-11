@@ -28,29 +28,28 @@ const Post = ({
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://i.imgur.com/I80W1Q0.png" />
+        <Avatar src={avatar} />
       </div>
 
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Vinicius Beloti{' '}
+              {displayName}{' '}
               <span className="post__headerSpecial">
-                <VerifiedUserIcon fontSize="small" className="post__badge" />
-                @vbeloti
+                {verified && (
+                  <VerifiedUserIcon fontSize="small" className="post__badge" />
+                )}
+                @{username}
               </span>
             </h3>
           </div>
 
           <div className="post__headerDescription">
-            <p>Descrição do post</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://pbs.twimg.com/card_img/1304144729190346755/6bRftMDW?format=jpg&name=small"
-          alt="Description img"
-        />
+        <img src={image} alt={text} />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
