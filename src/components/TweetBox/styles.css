@@ -35,6 +35,11 @@
   color: var(--twitter-color);
 }
 
+.tweetBox__icons > label {
+  color: var(--twitter-color);
+  cursor: pointer;
+}
+
 
 
 .tweetBox__tweetButton {
@@ -48,4 +53,8 @@
   font-size: .8rem !important;
   height: 40px !important;
   margin-left: auto !important;
+}
+
+.tweetBox__inputImg {
+  display: none;
 }
