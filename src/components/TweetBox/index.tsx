@@ -1,5 +1,8 @@
 import { Avatar, Button } from '@material-ui/core';
 import React from 'react';
+import CropOriginalIcon from '@material-ui/icons/CropOriginal';
+import GifIcon from '@material-ui/icons/Gif';
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
 import './styles.css';
 
@@ -11,12 +14,15 @@ const TweetBox = () => {
           <Avatar />
           <input type="text" placeholder="O que está acontecendo?" />
         </div>
-        <input
-          className="tweetBox__imageInput"
-          type="text"
-          placeholder="Opcional: Insira a URL da imagem"
-        />
-        <Button className="tweetBox__tweetButton">Tweetar</Button>
+
+        <div className="tweetBox__footer">
+          <div className="tweetBox__icons">
+            <CropOriginalIcon />
+            <GifIcon />
+            <InsertEmoticonIcon />
+          </div>
+          <Button className="tweetBox__tweetButton">Tweetar</Button>
+        </div>
       </form>
     </div>
   );

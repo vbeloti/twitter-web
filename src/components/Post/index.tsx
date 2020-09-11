@@ -48,7 +48,7 @@ const Post = ({
           </div>
         </div>
         <img
-          src="https://magazine.zarpo.com.br/wp-content/uploads/2018/01/As-12-melhores-praias-de-Ubatuba_zarpo-1.jpg"
+          src="https://pbs.twimg.com/card_img/1304144729190346755/6bRftMDW?format=jpg&name=small"
           alt="Description img"
         />
         <div className="post__footer">
