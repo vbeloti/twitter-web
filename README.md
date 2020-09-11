@@ -1,4 +1,4 @@
-## Twitter Web (React.js && Typescript)
+## Twitter Web (React.js && Typescript && firebase)
 
 <!-- <img src="" alt="Twitter" /> -->
 
