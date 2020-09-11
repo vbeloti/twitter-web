@@ -9,12 +9,12 @@ import React from 'react';
 import './styles.css';
 
 interface Ipost {
-  displayName?: string;
-  username?: string;
-  verified?: string;
-  text?: string;
-  image?: string;
-  avatar?: string;
+  displayName: string;
+  username: string;
+  verified: boolean;
+  text: string;
+  image: string;
+  avatar: string;
 }
 
 const Post = ({
